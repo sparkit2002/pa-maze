@@ -1,4 +1,5 @@
 require 'byebug'
+require_relative 'cell'
 require_relative 'maze_print'
 
 class Maze
