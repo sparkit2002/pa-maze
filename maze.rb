@@ -15,13 +15,13 @@ class Maze
 
   def generate_template
 
-    new_maze = Array.new(@hight,Array.new(@length,'0'))
+    new_maze = Array.new(@hight,Array.new(@length,Cell.new(true,true,true,true)))
 
     return new_maze
   end
 
   def print_maze
-    @p.maze_output(@maze)
+    @p.maze_output(@maze,@length)
   end
 
 
